@@ -1,0 +1,4 @@
+fastapi==0.97.0
+langchain==0.0.207
+openai==0.27.6
+sentence_transformers==2.2.2
