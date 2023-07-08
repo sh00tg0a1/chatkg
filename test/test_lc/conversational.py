@@ -34,7 +34,7 @@ llm = OpenAI(
     max_tokens=256,
 )
 
-serpapi_api_key='e457fc03ca3c0fc5c94958e91bf2259d5142197587ab0cb2ce2479bfc0be5698'
+serpapi_api_key=os.environ.get("SERPAPI_API_KEY")
 
 search = SerpAPIWrapper(serpapi_api_key=serpapi_api_key)
 tools = [
