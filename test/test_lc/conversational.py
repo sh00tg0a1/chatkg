@@ -7,6 +7,11 @@ from langchain.agents import initialize_agent
 
 import openai
 import os
+import dotenv
+
+env_file = '../../.env'
+dotenv.load_dotenv(env_file, override=True)
+
 
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 OPENAI_ENDPOINT  = os.environ.get("OPENAI_ENDPOINT")
