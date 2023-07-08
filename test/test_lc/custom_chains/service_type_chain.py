@@ -154,10 +154,10 @@ if __name__ == "__main__":
     from langchain import OpenAI
     import openai
 
-    OPENAI_API_KEY = "5cc0b8aef94b47db86c5b8c7f61ab9f2"
-    OPENAI_ENDPOINT  = "https://anyshare-demo-chatgpt.openai.azure.com/"
-    OPENAI_API_VERSION  = "2023-03-15-preview"
-    OPENAI_API_TYPE  = "azure"
+    OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+    OPENAI_ENDPOINT  = os.environ.get("OPENAI_ENDPOINT")
+    OPENAI_API_VERSION  = os.environ.get("OPENAI_API_VERSION")
+    OPENAI_API_TYPE  = os.environ.get("OPENAI_API_TYPE")
 
     openai.api_type = OPENAI_API_TYPE
     openai.api_base = OPENAI_ENDPOINT
